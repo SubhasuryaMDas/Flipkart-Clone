@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f1f2f4;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  
+}
+header {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  background-color: white;
+  display: flex;
+  width: 100%;
+
+  gap: 50px;
+  align-items: center;
+}
+#container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 40px;
+
+  align-items: center;
+}
+#seacrh-box {
+ background-color: #e4ecfd;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 40px;
+    padding: 0 12px;
+    border-radius: 6px;
+    gap: 8px;
+}
+#seacrh-box input {
+   background-color: #e4ecfd;
+    border: none;
+    height: 100%;
+    flex-grow: 1;
+    font-size: 16px;
+
+}
+#seacrh-box > input:focus{
+  outline: none;
+}
+#seacrh-box > svg{
+  color: rgb(92, 91, 91);
+    width: 24px;
+}
+
+svg {
+  width: 24px;
+  height: 24px;
+}
+.user {
+  display: flex;
+
+  align-items: center;
+  gap: 70px;
+}
+.user > div {
+  display: flex;
+  text-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+}
+#arr{
+  width: 16px;
+ 
+}
+ .user > div:first-child:hover >#arr{
+ transform: rotate(180deg);
+ transition:all .5s ease-in-out ;
+}
+nav{
+    width: 98%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(9, 10%);
+    place-items: center;
+    margin:10px 20px 20px 16px;
+    padding: 8px 24px 8px 24px;
+    justify-content: center;
+    height: 132px;
+    
+
+}
+nav > div{
+  place-items: center;
+  text-wrap: nowrap;
+}
+nav img{
+  width: 64px;
+  height: 64px;
+}
